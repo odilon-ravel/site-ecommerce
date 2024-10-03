@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon E-commerce</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Style général */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to right, #f4f4f4, #e9e9e9);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section principale */
+        #accueil {
+            background: url('background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Section produits */
+        #produits {
+            padding: 50px 20px;
+        }
+
+        /* Section avis */
+        #avis {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Section contact */
+        #contact {
+            padding: 50px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="logo">MonSiteWeb</div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <section id="accueil">
+        <h1>Bienvenue sur Mon E-commerce</h1>
+        <p>Ceci est votre destination pour les meilleurs produits en ligne.</p>
+        <a href="#produits" class="btn btn-light">Découvrir nos produits</a>
+    </section>
+
+    <!-- Section produits -->
+    <section id="produits" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Nos Produits</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/300" alt="Produit 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Produit 1</h5>
+                            <p class="card-text">Description du produit 1.</p>
+                            <p class="card-text"><strong>Prix: 29,99€</strong></p>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/300" alt="Produit 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Produit 2</h5>
+                            <p class="card-text">Description du produit 2.</p>
+                            <p class="card-text"><strong>Prix: 49,99€</strong></p>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/300" alt="Produit 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Produit 3</h5>
+                            <p class="card-text">Description du produit 3.</p>
+                            <p class="card-text"><strong>Prix: 19,99€</strong></p>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section avis -->
+    <section id="avis" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Avis Clients</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="card-text">"Excellent service et produits de qualité!" - Client 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="card-text">"Je suis très satisfait de mon achat!" - Client 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="card-text">"Livraison rapide et emballage soigné." - Client 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Mon E-commerce. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Bootstrap JS (Optionnel) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
